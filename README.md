@@ -5,5 +5,6 @@ Introduction
 > prolific tech solution demo dashboard.
 
 ### Download command CLI:
-``` git clone https://github.com/mbrsagor/dashboard.git
+```base
+ git clone https://github.com/mbrsagor/dashboard.git
 ```
