@@ -1,4 +1,5 @@
 const http = require('http');
+const url = require('url');
 
 const app = {};
 
@@ -17,6 +18,11 @@ app.createServer = () => {
 
 // Handle requests response
 app.handleReqRes = (req, res) => {
+    // request Handle
+    const parseURL = url.parse(req.url, true);
+    const path = parseURL.pathname;
+    // const trimPath = path.replace(/^|\//, '', )
+    console.log(path);
     // Request response
     res.end('Hello there, New Node js server');
 };
